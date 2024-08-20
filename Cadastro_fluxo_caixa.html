@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Cadastro_fluxo_caixa.css">
+    <title>Cadastro de fluxo de caixa</title>
 </head>
 <body>
-    <fieldset>
-        <legend>Cadastro de fluxo de caixa</legend>
-    <div><br>
+
+<fieldset>
+        <legend>Cadastro de fluxo de caixa</legend><br>
+
+    <div>
         <form action="Cadastro_fluxo_caixa.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="data">Data: </label>
                 <input type="date" name="data" id="data" class="form-control">
             </div><br>
 
-            <div>
+            <div class="tipo">
                 <label for="tipo">Tipo: </label>
-                <input type="radio" name="tipo" value="entrada" required>
                 <label for="tipo">Entrada</label>
-                <input type="radio" name="tipo" value="saida" required >
+                <input type="radio" name="tipo" value="entrada" required>
                 <label for="tipo">Saída</label>
+                <input type="radio" name="tipo" value="saida" required >
             </div><br>
 
             <div>
                 <label for="valor">Valor: </label>
                 <input type="number" stap name="valor" id="valor" required maxlength="13" class="form-control" step=".01">
             </div><br>
+
             <div>
                 <label for="historico">Histórico: </label>
                 <input type="text" name="historico" id="historico" required maxlength="150" class="form-control">
@@ -41,11 +45,11 @@
                 </select>
             </div><br>
 
-            <input type="submit" value="Enviar" class="buttom"><br><br>
-            <button><a href="index.php">Voltar</a></button>
+            <button><input type="submit" value="Enviar" class="buttom"></button><br><br>
+            <button><a href="index.php">MENU</a></button>
         </form>
     </div>
-</div>
+
 </fieldset>
 </body>
 </html>

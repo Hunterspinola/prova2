@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="index.css">
+    <title>MENU</title>
 </head>
 <body>
-    <fieldset>
-        <legend>MENU</legend>
-    <ul class="menu">
+
+<nav>
+    <ul>
         <li><a href="Cadastro_fluxo_caixa.html">Cadastro fluxo de caixa</a></li>
-        <li><a href="listar_fluxo_caixa.php">Listagem de fluxo de caixa</a></li>
-        <li><a href="consulta_fluxo_caixa.html">Consulta fluxo do caixa</a></li>
+        <li><a href="Listar_fluxo_caixa.php">Listagem de fluxo de caixa</a></li>
+        <li><a href="Consulta_fluxo_caixa.html">Consulta fluxo do caixa</a></li>
     </ul>
-    </fieldset>
+</nav>
+
 </body>
 </html>
